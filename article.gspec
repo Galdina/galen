@@ -1,0 +1,20 @@
+@objects
+	title1 custom-page._custompage.custom-page__title
+	text1 custom-page__title.custom-page__text.rich-text
+	columns1 custom-page__columns.columns._col-2._simple 
+	
+@groups
+    skeleton_elements   title1, text1, columns1
+	
+= Skeleton =
+    &skeleton_elements:
+        visible
+		#css font-size is "18px"
+	
+	text1:
+		below text1 70 px	
+	
+	columns1:
+		below text1 70 px
+
+		

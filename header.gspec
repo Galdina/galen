@@ -1,0 +1,92 @@
+@objects
+
+    header	.header__bar
+	menu	.header__menu
+	menu_item-*	.menu__item
+	icon_ticket	.icon._ticket
+	header-logo-name	.logo-name.logo-name-ru
+	header-lang .header__lang-title
+	
+	header_logo #header__logo.logo._normal._ru
+	logo-kidzania .logo-kidzania
+
+	
+= Header =
+    = Container =
+        header:
+            height 120 px
+            inside screen 0 px top
+            width 100% of screen/width
+            inside screen 0px left right
+
+#	= Logo =
+#		header_logo:
+#			width 220 px
+#			height 51.6 px
+#			
+#		logo-kidzania:
+#			width 140.1 px
+#			height 28.7667 px
+#			
+#		header-logo-name:
+#			width 34 px
+#			height 6 px		
+#			aligned vertically centered	logo-kidzania		
+#		
+		header-lang:
+			visible
+			height 19 px
+#			near menu_item-1 top left
+			css cursor is "pointer"
+			
+	= Items =	
+	@forEach [menu_item-*] as menuItem, next as nextItem
+        ${menuItem}:
+            aligned horizontally all ${nextItem} 
+            	
+	menu_item-1:
+	    height 30 px
+		aligned horizontally all menu_item-2
+		#css cursor is "pointer"
+		css color is "rgba(0, 0, 0, 1)"
+		data-page is about
+		#text is ""
+	menu_item-2:
+		height 30 px
+		aligned horizontally all menu_item-3
+		#css cursor is "pointer"
+		css color is "rgba(0, 0, 0, 1)"
+		#text is ""
+	menu_item-3:
+		height 30 px
+		aligned horizontally all menu_item-4
+		css color is "rgba(0, 0, 0, 1)"
+		#css cursor is "pointer"
+		#text is ""		
+	menu_item-4:
+		height 30 px
+		aligned horizontally all menu_item-5
+		css color is "rgba(0, 0, 0, 1)"
+		#css cursor is "pointer"
+		#text is ""
+	menu_item-5:
+		height 30 px
+		aligned horizontally all menu_item-6
+		css color is "rgba(0, 0, 0, 1)"
+		#css cursor is "pointer"
+		#text is ""
+	menu_item-6:
+		height 30 px
+		aligned horizontally all menu_item-7
+		css color is "rgba(0, 0, 0, 1)"
+		#css cursor is "pointer"
+		#text is ""
+	menu_item-7:
+		height 30 px
+		css color is "rgba(0, 0, 0, 1)"
+		#css cursor is "pointer"
+		#text is ""
+		
+	icon_ticket:
+		width 24 px 
+        height 24 px 	

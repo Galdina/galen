@@ -1,0 +1,21 @@
+@objects
+	news_header .section-title.section-news__title
+    arrow .banner__arrow._next._news.swiper-button-next.news__next
+	news_elem .section-news__wrap news.news__wrap.news__elem
+	
+= Banner =
+    news_header
+        visible
+		height 52.8 px
+	
+	arrow
+		visible
+		width 80 px
+		height 80 px	
+	
+	@forEach [news_elem-*] as banner, next as nextbanner
+        ${nextbanner}:
+            aligned horizontally all ${nextbanner} 	
+		
+
+		

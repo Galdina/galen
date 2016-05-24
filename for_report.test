@@ -1,0 +1,22 @@
+@@ set
+	header c:/kidzania/header.gspec
+	
+    block_open_hours    c:/kidzania/open_hours.gspec
+#    url     https://kidzania.ru/en/world/
+
+@@ Parameterized
+   | tag   	  | size       |
+   | desktop  | 1280x768   |
+   | tablet   | 600x800    |
+   | mobile   | 400x600    |
+   
+World page test in ${tag} device 
+    https://kidzania.ru/en/world/ ${size}
+        check "${block_open_hours}" --include "${tag}"
+		
+World page header test in ${tag} device 
+    https://kidzania.ru/en/world/ ${size}
+        check "${header}" --include "${tag}"		
+#	https://kidzania.ru/ru/world/
+#	    check open_hours.gspec --include "${tag}"
+	

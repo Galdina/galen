@@ -1,0 +1,36 @@
+@objects
+	globe	.section.section-what._header._globe
+    title	.section-title._limited.section-what__title
+    desc    .section-desc._limited.section-what__desc
+    skin	.skin
+	
+	country .section_country.__swap
+    footer          #footer
+
+@groups
+    skeleton_elements   globe, title, desc, skin
+	
+= Skeleton =
+	globe:
+		css background is "https://kidzania.ru/-/1.3.853-1/static/img/section-triangle.png"
+
+    &skeleton_elements:
+        visible
+		css font-family starts "Humanist"
+		css font-family ends "sans-serif"
+		css font-size is "18px"
+	
+	title:
+		css color is "rgba(255,255,255)"	
+	
+	desc:
+		aligned vertically left title
+		#css font-size is "18px"
+		css max-width is "400px"
+		css color is "rgba(0,0,0,1)"
+		below title 30 to 31 px
+		
+		
+	country:
+		visible
+		

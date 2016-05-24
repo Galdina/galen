@@ -1,0 +1,85 @@
+@objects
+#
+#Left side
+    tickets	.section.section-tickets
+    contacts .section-tickets__contacts.tickets-contacts
+	logo .tickets-contacts__wrap
+	img .tickets-contacts__logo
+	content .tickets-contacts__content
+	address .tickets-contacts__address
+	phone .tickets-contacts__phone
+	social .tickets-contacts__social
+	tickets_left_side .ticket__left
+	fb .tickets-contacts__link._fb
+	vk .tickets-contacts__link._vk
+	ig .tickets-contacts__link._ig
+	
+#Right side
+	wrap .ticket__wrap
+	text .ticket__text
+	day .ticket__day
+	tickets_phone .ticket__left.ticket__content.ticket__text.ticket__phone
+	button .button
+	
+@groups
+	open tickets, contacts, logo, img, content, address, phone, social, tickets_left_side, wrap, text, day
+	social_icon fb,vk,ig
+
+= Main =
+	tickets:
+		css padding-top is "20px"
+		inside screen 0px left right
+	
+= Skeleton =
+
+    &open:
+        visible
+		#width 100% of screen
+		css font-family starts "Humanist"
+		css font-family ends "sans-serif"
+		 
+	img:
+		width 220 px
+		height 156 px
+		
+		
+	phone:
+		text is "+7 495 232-54-39"
+		css font-size is "16px"
+	
+	content:
+		text contains "|"
+	
+	address:
+		css font-family starts "Humanist"
+		css font-family ends "sans-serif"
+		css font-size is "16px"
+		
+	&social_icon:
+		height 22 px
+		below phone 30 to 31 px
+	
+	fb:
+		width 7 px 
+		left-of vk 18 px
+		
+	vk:
+		width 16 px 
+		right-of fb 18 px
+		
+	ig:
+		width 12 px 
+		right-of vk 18 px
+		
+	button:
+		height 40 px
+		#css background-color is "#bd234d"
+		css font-family starts "Humanist Bold"
+		css padding-right is "30px"
+		css padding-left is "30px"
+		below tickets_phone 30 to 31 px
+		
+	day:
+		height 39 px
+		
+	

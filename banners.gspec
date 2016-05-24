@@ -1,0 +1,44 @@
+@objects
+	banner1 .banner__slide.swiper-slide._align-left._align-top._background._dark-blue.swiper-slide-active
+	banner2 .banner__slide.swiper-slide._align-left._align-top._background._dark-blue.swiper-slide-next
+#	banner3 .banner__slide.swiper-slide._align-left._align-top._background._dark-blue._image._pops.swiper-slide-next
+#	banner4 .banner__slide.swiper-slide._align-left._align-top._video._background.swiper-slide-next
+	
+#	arrow .section.banner._frames-5._object-fit._multiple.banner__arrow._next.swiper-button-next 
+#	background1 .banner__background #.banner__line.swiper-wrapper.banner__slide.swiper-slide._align-left._align-top._background._dark-blue.swiper-slide-active.banner__background 
+	title	.banner__title
+	
+= Banner =
+#    background1:
+#        visible
+#		css background is "/media/original_images/banner_UULa9OK.jpg"
+	
+#	arrow:
+#		visible
+#		width 80 px
+#		height 80 px	
+	
+
+	
+	
+#	@forEach [banners-*] as banner, next as nextbanner
+#        ${5}:
+	banner1:
+        aligned horizontally all banner2	
+		width 880 px
+		height 500 px
+			
+	banner2:
+        aligned horizontally all banner1	
+		width 880 px
+		height 500 px	
+		
+	banner3:
+        aligned horizontally all banner1	
+		width 880 px
+		height 500 px
+			
+	title:
+		css font-family starts "HMN95_KIDZO"
+		css font-family ends "HMN95_KIDZO,"Arial Black""
+		css font-size is "36px"
